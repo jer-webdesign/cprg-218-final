@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERSWIFT - Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="CyberSwiftFX Logo">
+                <h1>CYBERSWIFT<span class="vertical-line">|</span><span class="vertical-fx"><span>F</span><span>X</span></span></h1>
+            </div>            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop_books.html" class="active">Shop Books</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>New Releases</h2>        
+        <section class="book-list">
+            <h3>New Releases</h3>
+            <section class="book-grid" id="book-slider">
+                <article class="book">
+                    <figure>
+                        <img src="3d_modeling_book.png" alt="Image of 3D modeling book">
+                        <figcaption>
+                            <h4>3D Modeling for Beginners</h4>
+                            <p>An essential guide to the fundamentals of 3D modeling.<br>
+                            <strong>Price: $30.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="book">
+                    <figure>
+                        <img src="3d_sculpting_book.png" alt="Image of 3D sculpting book">
+                        <figcaption>
+                            <h4>3D Sculpting Mastery</h4>
+                            <p>A comprehensive guidance on sculpting realistic 3D models using digital software.<br>
+                            <strong>Price: $50.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>                
+                <article class="book">
+                    <figure>
+                        <img src="3d_rigging_book.png" alt="Image of 3D rigging book">
+                        <figcaption>
+                            <h4>The Ultimate Guide to 3D Rigging</h4>
+                            <p>A comprehensive techniques to create and manipulate versatile 3D character rigs.<br>
+                            <strong>Price: $38.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>                 
+                <article class="book">
+                    <figure>
+                        <img src="3d_animation_book.png" alt="Image of 3D animation book">
+                        <figcaption>
+                            <h4>3D Animation Essentials</h4>
+                            <p>A comprehensive guide that covers the core principles and techniques of 3D animation.<br>
+                            <strong>Price: $45.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="book">
+                    <figure>
+                        <img src="3d_rendering_book.png" alt="Image of 3D rendering book">
+                        <figcaption>
+                            <h4>3D Graphics Rendering</h4>
+                            <p>An in-depth solutions and recipes to master the essentials of 3D rendering<br>
+                            <strong>Price: $65.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>                
+                <article class="book">
+                    <figure>
+                        <img src="3d_compositing_book.png" alt="Image of 3D compositing book">
+                        <figcaption>
+                            <h4>Mastering Visual Compositing</h4>
+                            <p>An essential methods and processes to create breathtaking composite imagery.<br>
+                            <strong>Price: $70.00</strong></p>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </figcaption>
+                    </figure>
+                </article>                                                            
+            </section>
+            <button class="slide-control left" onclick="moveSlide(-1)">&lt;</button>
+            <button class="slide-control right" onclick="moveSlide(1)">&gt;</button>
+        </section> 
+    </main>
+    <footer>
+        <p>&copy; 2024 CYBERSWIFT|FX. All rights reserved.</p>
+    </footer>
+    
+    <!-- Modal --> 
+    <section id="modal" class="modal"> 
+        <article class="modal-content"> 
+            <span class="close">&times;</span> 
+            <p>Item added to your cart.<br> 
+                <a href="#" id="continue-shopping">Continue Shopping</a>
+            </p> 
+        </article>  
+    </section>   
+    <script src="script.js"></script>
+</body>
+</html>
