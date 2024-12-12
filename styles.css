@@ -367,9 +367,13 @@ figcaption button:hover {
     padding-top: 22px;
     padding-bottom: 20px;
     margin: 10px 20px;
-    width: 25%;
+    width: 40%;
     height: auto;
   }
+
+  nav .nav-links li {
+    padding-bottom: 20px;
+  }  
 
   nav .nav-links.active {
     display: flex;
@@ -403,7 +407,7 @@ figcaption button:hover {
   .book figure {
     width:80%;
     margin: 0;
-    padding: 10px 10px 30px 15px;
+    padding: 10px 10px 30px 10px;
   }
   
   .book-grid { 
